@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lienhe</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial Narrow", Arial, sans-serif;
+      }
+        header {
+          background: rgb(0, 255, 81);
+          width: 100%;
+          height: 130px;
+          padding-top: 20px;
+        }
+        header h1 {
+          color: blue;
+        }
+        header P {
+          text-align: center;
+          font-weight: bold;
+          font-size: 25pt;
+          color: rgb(255, 0, 30);
+        }
+        header h1 img {
+          width: 40px;
+          height: 40px;
+        }
+        input[type="search"] {
+          float: right;
+          padding: 7px;
+          color: rgb(255, 0, 136);
+          border-radius: 5px;
+          margin-right: 10px;
+        }
+        nav {
+          margin: 0px 300px;
+        }
+        nav a {
+          font-size: 15pt;
+          margin-right: 40px;
+          background: rgb(21, 16, 16);
+          color: white;
+          /* border: 2px solid red; */
+          border: none;
+          border-radius: 5px;
+          padding: 5px 10px;
+          text-decoration: none;
+        }
+        nav a:hover {
+          border-bottom: 3px solid red;
+          background: rgb(57, 48, 48);
+        }
+        
+        .container{
+          height: 500px;
+        background-color: rgb(137, 129, 136);
+        
+        }
+
+      form {
+        background: rgb(79, 171, 223);
+        border: 1px solid red;
+        border: none;
+        width: 300px;
+        height: auto;
+        margin-left: 40%;
+        margin-top: 10px;
+        border-radius: 10px;
+        position: fixed;
+      }
+      form h1 {
+        text-align: center;
+        margin-top: 10px;
+      }
+      form [for="name"] {
+        margin-top: 20px;
+        font-size: 15pt;
+        display: block;
+        padding-left: 20px;
+      }
+      [for="Hotline"] {
+        font-size: 15pt;
+        display: block;
+        padding-left: 20px;
+        margin-top: 20px;
+      }
+      [for="address"] {
+        font-size: 15pt;
+        display: block;
+        padding-left: 20px;
+        margin-top: 20px;
+      }
+
+      form input {
+        width: 250px;
+        height: 30px;
+        color: black;
+        font-size: 12pt;
+        padding-left: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-left: 20px;
+      }
+      form select {
+        padding-left: 10px;
+        margin-left: 20px;
+        width: 264px;
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid black;
+      }
+      form button[type="submit"] {
+        background: rgb(253, 5, 42);
+        padding: 10px 25px;
+        border-radius: 3px;
+        margin-top: 30px;
+        margin-left: 100px;
+        font-weight: bold;
+        color: white;
+        animation: blink 1.5s infinite;
+      }
+      form button[type="submit"]:hover {
+        background: rgb(221, 221, 9);
+      }
+      @keyframes blink {
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+      form p {
+        margin: 30px;
+        text-align: center;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>  <p>CỬA HÀNG QUẦN ÁO</p>
+      <form action="search" method="get"></form>
+      <input type="search" name="search" id="#" placeholder="Tìm kiếm..." />
+    </form>
+    <h1><img src="./img/logo.jpg" alt="" />Văn Thành shop</h1>
+    <nav>
+      <a href="./container.html" target="">Home</a>
+      <a href="./Introduce.html" target="">Introduce</a>
+      <a href="./container.html" target="">Product</a>
+      <a href="./container.html" target="">contact</a>
+      <a href="./container.html" target="">news</a>
+    </nav>
+  </header>
+    <div class="container">
+      <form action="./container.html" method="get">
+        <h1>THÔNG TIN</h1>
+        <label for="name">Họ tên:</label>
+        <input type="text" name="username" placeholder="nhập họ tên" required />
+        <label for="Hotline">Số điện thoại:</label>
+        <input type="tel" name="tel" placeholder="Số điện thoại" required />
+        <label for="address">Địa chỉ:</label>
+        <select name="address" id="">
+          <option value="0">Địa chỉ:</option>
+          <option value="1">Mường Giàng-Quỳnh Nhai-Sơn La</option>
+          <option value="2">Mai Dịch-Cầu Giấy-Hà Nội</option>
+          <option value="3">Khu KTX SV khu văn hóa nghệ thuật-Mai Dịch</option>
+          <option value="4">Quận Hai Bà Trưng-Hà Nội</option>
+        </select>
+        <button type="submit" onclick="dathang()">Đặt hàng</button>
+        <p>Xin quý khách hãy điền thông tin đầy đủ</p>
+      </form>
+    </div>
+
+    <script>
+      function dathang() {
+        alert("Bạn đã đặt hàng thành công");
+      }
+    </script>
+  </body>
+</html>

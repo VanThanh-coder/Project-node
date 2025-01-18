@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 960px;
+
+  height: auto;
+  margin: 0px auto;
+  background: rgba(173, 182, 193, 0.274);
+}
+header {
+  background: white;
+  height: 70px;
+}
+header h1 {
+  color: rgb(26, 71, 71);
+}
+nav {
+  margin-right: 10px;
+  float: left;
+  padding-left: 340px;
+}
+nav a {
+  text-decoration: none;
+  margin-right: 25px;
+  border: 1px solid royalblue;
+  background: rgb(26, 22, 22);
+  color: aliceblue;
+  border-radius: 5px;
+  font-size: 10pt;
+  padding: 5px 15px;
+}
+nav a:hover {
+  border-bottom: 5px solid red;
+}
+#search {
+  margin-left: 585px;
+  padding: 5px;
+}
+#search label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+#search input[type="search"] {
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+  font-weight: bold;
+}
+#search input[type="button"] {
+  background: red;
+  padding: 7px 17px;
+  border-radius: 50px;
+  color: aliceblue;
+}
+#content {
+  border: 1px solid red;
+  width: 700px;
+  height: 400px;
+  float: right;
+  background: white;
+  border: none;
+}
+#content h1,
+p {
+  padding: 10px;
+}
+.box1 {
+  border: 1px solid red;
+  width: 250px;
+  height: 195px;
+  background: white;
+  margin-bottom: 10px;
+  border: none;
+}
+.box1 h1 {
+  background: black;
+  color: white;
+}
+.box2 {
+  border: 1px solid red;
+  width: 250px;
+  height: 195px;
+  background: white;
+  margin-bottom: 10px;
+  border: none;
+}
+.box2 h1 {
+  background: black;
+  color: white;
+}
+table {
+}
+td {
+  background: red;
+  border: 1px solid red;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+}
+footer {
+  border: 1px solid red;
+  width: 100%;
+  height: 50px;
+  background: white;
+  line-height: 35px;
+  border: none;
+}

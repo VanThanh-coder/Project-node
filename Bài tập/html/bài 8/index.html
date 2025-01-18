@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      [for~="anh"] {
+        color: red;
+        margin-right: 10px;
+      }
+      [type="text"],
+      [type="email"] {
+        width: 200px;
+        height: 30px;
+      }
+      a[href*="links"] {
+        color: rgb(153, 51, 93);
+      }
+      chua truy cap vao trang web .click1:link {
+        color: yellow;
+      }
+      /* khi truy cap vao trang web */
+      .click1:visited {
+        color: rgb(255, 0, 149);
+      }
+
+      /* lay the p dau tien*/
+      /* p:first-child {
+        color: blue;
+      } */
+      /* lay the p cuoi cung */
+      /* p:last-child {
+        color: chartreuse;
+      } */
+      /* nhan len */
+      /* 4n la dong thu 4 */
+      /* p:nth-child(4n) {
+        color: rgb(255, 0, 191);
+      } */
+
+      /* ko quan tam co the dang trc */
+      /* p:first-of-type {
+        color: rebeccapurple;
+      }   */
+      /* loại bỏ p se ko tác động p*/
+      .top:not(p) {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="anh">yeu</label>
+      <input type="text" />
+      <label for="anh">yeu</label>
+      <input type="email" />
+      <label for="anh">yeu</label>
+      <input type="tel" />
+    </form>
+    <a href="links">click1</a>
+    <a href="links- ffff" target="_blank">click2</a>
+    <a href="ssfgg link-s">click3</a>
+    <a href="linksccfeev ">click4</a><br />
+
+    <a class="click1" href="http://www.google.com" target="_blank">Google</a
+    ><br />
+    <div>
+      <h1 class="top">hi</h1>
+      <p class="top">anh yeu em1</p>
+      <h2 class="top">gggggggggggggggg</h2>
+      <p>anh yeu em2</p>
+      <p>anh yeu em3</p>
+      <p>anh yeu em4</p>
+      <p>anh yeu em5</p>
+    </div>
+  </body>
+</html>

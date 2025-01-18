@@ -1,0 +1,281 @@
+.border {
+  border: 1px solid red;
+  width: 200px;
+  height: 100px;
+  margin-bottom: 30px;
+
+  margin-right: 10px;
+}
+.border.radius1 {
+  background: red;
+  /* border-radius: top right buttom left ; */
+  /* border-radius 10px 10px 10px 10px */
+  border-radius: 50px 10px 10px 0px;
+}
+.border.radius2 {
+  background: rgb(47, 0, 255);
+  /* border-top-left-radius:30px ;
+    border-bottom-right-radius: 30px; */
+  border-radius: 50px 20px;
+}
+.border.radius3 {
+  background: rgb(0, 255, 17);
+  border-radius: 10px 50px 20px;
+}
+.borderimg {
+  border: 10px solid transparent;
+  border-image: url("./Cach-bao-quan-thit-lon-gac-bep-khong-bi-hong.jpg") 40%
+    round;
+}
+.Bcground1 {
+  background-image: url("./Cach-bao-quan-thit-lon-gac-bep-khong-bi-hong.jpg");
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.Bcground2 {
+  background-image: url("./Cach-bao-quan-thit-lon-gac-bep-khong-bi-hong.jpg");
+  width: 600px;
+  height: 200px;
+  background-size: 100% 130%;
+  margin-bottom: 10px;
+}
+.Bcground3 {
+  width: 300px;
+  height: 100px;
+  border: 10px dotted black;
+  padding: 35px;
+  background: yellow;
+  background-clip: content-box;
+}
+.tex1 {
+  border: 1px solid black;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ba-D p {
+  background: rgb(0, 124, 128);
+  width: 200px;
+  height: 60px;
+  border: 1px solid black;
+}
+p.transform {
+  transform: skewY(20deg);
+}
+
+.transform-transtion {
+  background: red;
+  width: 70px;
+  height: 70px;
+  transition: width 3s, height 3s, transform 3s;
+}
+.transform-transtion:hover {
+  width: 300px;
+  height: 300px;
+  /* 360deg la xoay 360 độ */
+  transform: rotate(360deg);
+}
+
+.animation {
+  background: yellow;
+  width: 200px;
+  height: 100px;
+  position: fixed;
+  animation-name: ani; /* name */
+  animation-duration: 10s; /* secon */
+  animation-iteration-count: 1; /* số lượng đếm */
+  /* viết tắt  */
+  /* animation: name, secon , count; */
+}
+@keyframes ani {
+  /* from {
+    background: green;
+  }
+  to {
+    background: red;
+  } */
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  float: left;
+  object-fit: contain;
+  object-position: 10% 10%;
+  overflow-y: scroll;
+}
+.blur {
+  filter: blur(3px);
+}
+.brightness {
+  filter: brightness(250%);
+}
+.contrast {
+  filter: contrast(180%);
+}
+.grayscale {
+  filter: grayscale(100%);
+}
+.huerotate {
+  filter: hue-rotate(180%);
+}
+.invert {
+  filter: invert(100%);
+}
+.opacity {
+  filter: opacity(50%);
+}
+.saturate {
+  filter: saturate(4);
+}
+.sepia {
+  filter: sepia(100%);
+}
+.shadow {
+  filter: drop-shadow(8px 8px 3px red);
+}
+
+button {
+  background: red;
+  padding: 20px 30px;
+  opacity: 70%;
+  cursor: not-allowed; /*khi chuột qua sẽ bị vô hiệu hóa*/
+  font-weight: bold;
+}
+.newspaper {
+  /*  column-rule-width: 3px;
+     column-rule-color: red;
+  column-rule-style: solid; */
+
+  /* viết tắt  */
+  column-rule: 3px solid rgb(212, 19, 19);
+  /* số cột */
+  column-count: 1;
+  /* pading viền với text */
+  column-gap: 100px;
+}
+.GDngdung {
+  border: 1px solid black;
+  width: 300px;
+  overflow: scroll;
+  resize: vertical; /*giống thể textarea*/
+}
+
+:root {
+  /* khai báo biến màu  */
+  --xanh: #72ed64;
+  --đỏ: #eb0918;
+}
+.biencss p {
+  border: 1px solid black;
+  height: 100px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--xanh);
+  background-color: var(--đỏ);
+}
+
+/* @property ten ben */
+@property --my-bg-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: red;
+}
+.Div {
+  width: 100px;
+  height: 100px;
+  background-color: var(--my-bg-color);
+}
+.Div.fresh {
+  --my-bg-color: green;
+}
+.Div.nature {
+  --my-bg-color: yellow;
+}
+
+.Box-sizing {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  /* dễ dàng kiểm soát kích thước mà ko cần phải tính toán nhiều */
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.media p {
+  /* màn hình mặc định  1020px*/
+  font-size: 60px;
+}
+@media (max-width: 720px) {
+  .media p {
+    font-size: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .madia p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .media p {
+    font-size: 10px;
+  }
+}
+/* max-width với orientation:portrait gần giống nhau */
+/* /* @media (max-width: 720px) and (orientation: portrait) {
+  body {
+    color: #eb0918;
+    opacity: 80%;
+  }
+} */
+
+/* Kiểu dáng áp dụng khi thiết bị ở chế độ dọc */
+/* @media (orientation: portrait) {
+  body {
+      background-color: lightgray;
+      font-size: 14px;
+  }
+} */
+
+/* @media screen and (min-width: 500px) {
+  .media1 p {
+    font-size: 80px;
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .media1 p {
+    font-size: 80px;
+  }
+}

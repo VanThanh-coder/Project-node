@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: black;
+      }
+      h1 {
+        color: rgb(249, 246, 246);
+        font-size: 100px;
+        /* text-shadow:x y độ mờ color; */
+        text-shadow: 0px 0px 20px cyan, 0px 0px 40px cyan, 0px 0px 80px cyan;
+      }
+      h2 {
+        background-image: url("./6557c040c94bccf.jpg");
+        background-size: 100% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 100pt;
+      }
+      .shape {
+        border: 1px solid red;
+        background: rgb(57, 134, 172);
+        width: 100px;
+        height: 100px;
+      }
+      .a {
+        transform: scale(0.5);
+        background: linear-gradient(to right, red, yellow);
+      }
+      .b {
+        transform: scalex(0.75);
+        background: radial-gradient(circle, #ff0000, #0000ff);
+      }
+      .c {
+        transform: scaley(0.75);
+        background: repeating-linear-gradient(red, green, blue 20%);
+      }
+      .d {
+        transform: rotate(45deg);
+        background: repeating-radial-gradient(
+          circle,
+          rgb(192, 255, 198),
+          rgb(255, 0, 60) 20%
+        );
+      }
+      .f {
+        transform: skew(15deg);
+      }
+
+      .g {
+        transform: translate(1rem, 1rem);
+        background: conic-gradient(
+          from 45deg,
+          red,
+          yellow,
+          lime,
+          aqua,
+          blue,
+          magenta,
+          red
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TEXT</h1>
+    <h2>TEXT</h2>
+
+    <details>
+      <summary>
+        <span><a href="">Lựa chọn</a></span>
+      </summary>
+      <b>>></b>
+      <a class="a1" href="">Tiếng việt</a>
+      <a class="a1" href="">Tiếng Anh</a>
+      <a class="a1" href="">Tiếng Đức</a>
+      <a class="a1" href="">Tiếng Nhật</a>
+    </details>
+    <style>
+      details {
+        color: wheat;
+        background: rgb(229, 7, 59);
+        position: absolute;
+        width: 400px;
+        margin-left: 200px;
+        font-size: 20pt;
+      }
+      summary span a {
+        background: rgb(229, 7, 59);
+        border: 2px solid red;
+        color: wheat;
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+      details .a1 {
+        background: rgb(240, 246, 240);
+        display: block;
+        padding: 10px;
+      }
+      details .a1:hover {
+        background: rgb(118, 188, 245);
+      }
+    </style>
+
+    <div class="shape a"></div>
+    <div class="shape b"></div>
+    <div class="shape c"></div>
+    <div class="shape d"></div>
+    <div class="shape f"></div>
+    <div class="shape g"></div>
+
+    <div class="loader"></div>
+    <style>
+      .loader::after {
+        content: "";
+        font-weight: 600;
+        font-size: 114px;
+        color: rgb(186, 216, 240);
+        /* đặt tên biến cho keyframes */
+        animation-name: loading;
+        animation-duration: 1500ms;
+        animation-iteration-count: infinite;
+      }
+      @keyframes loading {
+        0% {
+          content: "L";
+        }
+        10% {
+          content: "Lo";
+        }
+        20% {
+          content: "Loa";
+        }
+        30% {
+          content: "Load";
+        }
+        40% {
+          content: "Loadi";
+        }
+        50% {
+          content: "Loadin";
+        }
+        60% {
+          content: "Loading";
+        }
+        70% {
+          content: "Loading.";
+        }
+        80% {
+          content: "Loading..";
+        }
+        90% {
+          content: "Loading...";
+        }
+        100% {
+          content: "Loading....";
+        }
+      }
+    </style>
+
+    <input style="color: white" type="password " id="pwd" />
+    <input type="checkbox" id="chk" /><b style="color: white">Show password</b
+    ><br />
+
+    <script>
+      const pwd = document.getElementById("pwd");
+      const chk = document.getElementById("chk");
+      chk.onchange = function (e) {
+        pwd.type = chk.checked ? "text" : "password";
+      };
+    </script>
+
+    <button>Hover Me</button>
+    <style>
+      button {
+        border: 5px solid rgb(147, 215, 241);
+        color: white;
+        padding: 10px 20px;
+        margin: 20px;
+        background: #2abbc0;
+        transition: background 1s;
+        border-radius: 5px;
+      }
+      button:hover {
+        background: black;
+        filter: drop-shadow(0px 0px 15px #95e4f1);
+      }
+    </style>
+  </body>
+</html>

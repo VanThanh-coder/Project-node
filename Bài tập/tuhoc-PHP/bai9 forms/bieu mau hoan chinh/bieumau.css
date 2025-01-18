@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+form {
+  border: 10px solid black;
+  width: 550px;
+  height: auto;
+  padding: 2px;
+  margin: 10px auto;
+  float: left;
+}
+label {
+  font-size: 20pt;
+  font-weight: bold;
+  display: block;
+  margin-left: 22px;
+  margin-top: 10px;
+}
+input {
+  margin-left: 22px;
+}
+input[type="text"] {
+  width: 250px;
+  height: 30px;
+}
+input[type="email"] {
+  width: 250px;
+  height: 30px;
+}
+input[type="url"] {
+  width: 250px;
+  height: 30px;
+}
+textarea {
+  margin-left: 22px;
+}
+input[type="submit"] {
+  margin-top: 20px;
+  background: rgb(18, 13, 13);
+  color: white;
+  padding: 10px 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+span {
+  color: red;
+}
+h1 {
+  text-align: center;
+}
+table {
+  margin: 0 auto;
+}
+table td {
+  text-align: center;
+  height: 50px;
+  width: 90%;
+}
+
+/* body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  // viết tắt thay vì dùng cả 4 dòng
+  background: #ffffff url("img_tree.png") no-repeat right top;
+} */

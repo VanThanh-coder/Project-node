@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      button {
+        padding: 10px 20px;
+        color: red;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+      form {
+        border: 1px solid rgb(190, 57, 57);
+        background-color: aquamarine;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+      input {
+        height: 25px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="bam()">bấm</button>
+    <button onclick="Tinh()">Tính</button>
+    <button onclick="thongtin()">Thông tin Sinh viên</button>
+    <script src="./Script.js"></script>
+
+    <form action="">
+      <label for="name">Tên đăng nhập</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="tên đăng nhập"
+      />
+      <label for="login">Mật khẩu</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Mật khẩu"
+      />
+      <button type="submit" onclick="login()">Đăng nhập</button>
+    </form>
+  </body>
+</html>

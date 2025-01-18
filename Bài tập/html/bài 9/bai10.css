@@ -1,0 +1,61 @@
+body {
+  width: 760px;
+  margin: 10px auto;
+}
+#content {
+  border: 1px solid rgb(240, 8, 8);
+  width: auto;
+  height: auto;
+}
+#content .cong-nghe {
+  height: 40px;
+  background: red;
+  color: white;
+  border: 1px solid rgb(255, 0, 17);
+  width: 640px;
+}
+#content .cong-nghe b {
+  float: right;
+  margin-top: 10px;
+  color: white;
+}
+#content .Thuong-hieu {
+  height: 60px;
+  background: rgb(238, 204, 204);
+  border: 1px solid red;
+  margin-top: 10px;
+  width: 640px;
+}
+#content .Thuong-hieu p {
+  color: red;
+  font-size: 20pt;
+  text-align: center;
+  font-weight: bold;
+  line-height: 10px;
+}
+#content img {
+  height: 40px;
+  float: right;
+  width: 108px;
+  height: 108px;
+  border: 2px solid red;
+}
+.img1 {
+  background: red;
+  border: 2px solid red;
+}
+#box {
+  display: flex;
+}
+.box1,
+.box2 {
+  width: 400px;
+  height: 300px;
+  border: 1px solid red;
+}
+b {
+  color: red;
+}
+span {
+  font-weight: bold;
+}

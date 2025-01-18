@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: rgb(215, 186, 191);
+}
+#container {
+  width: 100%;
+  margin-left: 100px;
+}
+.khung1,
+.khung2,
+.khung3 {
+  border: 1px solid red;
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  margin: 30px;
+  float: left;
+  border: none;
+}
+.top {
+  color: white;
+  text-align: center;
+}
+h3 {
+  height: 35px;
+  line-height: 35px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+p {
+  font-size: 30pt;
+  padding: 10px;
+}
+p span {
+  font-size: 60pt;
+}
+h4 {
+  text-align: center;
+  padding: 5px;
+}
+.mid ul {
+  list-style: square;
+  margin-left: 30px;
+}
+.mid {
+  background: white;
+}
+.mid ul li {
+  color: rgb(50, 43, 33);
+  padding: 10px;
+}
+.buttom h2 {
+  text-align: center;
+  color: white;
+  padding: 7px;
+}
+
+.khung1 h3 {
+  background: rgb(106, 234, 174);
+}
+.khung2 h3 {
+  background-color: rgb(21, 186, 198);
+}
+.khung3 h3 {
+  background: rgb(224, 41, 41);
+}
+.khung1 {
+  background: rgb(99, 204, 158);
+}
+.khung2 {
+  background: rgb(50, 225, 234);
+}
+.khung3 {
+  background-color: rgb(203, 59, 59);
+}

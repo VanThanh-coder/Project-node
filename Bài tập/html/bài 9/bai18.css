@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+#home{
+     max-width: 1060px; 
+     height: 600px;
+     border: 1px solid black;
+     margin: 50px auto;
+}
+.header{
+    border: 1px solid black;
+    margin: 10px auto;
+    width: 960px ;
+    background: rgb(1, 1, 1);
+    
+   
+}
+
+
+.header p{
+    color: white;
+    float: right;
+    
+   
+}
+.icon{
+    margin-left: 850px;
+}
+.search{
+    float: right;
+}
+nav{
+    background: rgb(15, 14, 14);
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.content{
+    width: 960px;
+    margin: 0px auto;
+}
+.left{
+    float: left; 
+    width: 540px;
+}
+.left1{
+    width:100%;
+    height: 40px;
+    border: 1px solid black;
+    margin: 0px 0px 20px 0px; 
+}
+.left1 a{
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+}
+.left2{
+    width:100%;
+    height: 300px;
+    border: 1px solid black;
+}
+.left2 h1{
+    background: black;
+    color: white;
+}
+.left2 table{
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+
+}
+.left2 table td{
+    padding-right: 40px;
+}
+.left2 button{
+    margin: 30px 50px 0px 30px;
+    float: right;
+}
+.right{
+    width:390px;
+    height: 360px;
+    border: 1px solid black;
+    margin: 0px 0px 0px 0px;
+    float:right;
+   padding: 10px 0px 0px 25px;
+  
+   
+}
+

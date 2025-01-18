@@ -1,0 +1,21 @@
+#content h1 {
+  color: red;
+}
+#content li {
+  color: blue;
+  font-weight: bold;
+  font-size: 14pt;
+  list-style: none;
+}
+#content {
+  max-width: 700px;
+  float: left;
+  margin-right: 20px;
+}
+
+img {
+  padding-bottom: 5px;
+  width: 240px;
+  height: 130px;
+  display: block;
+}

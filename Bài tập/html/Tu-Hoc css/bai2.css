@@ -1,0 +1,116 @@
+a:link {
+  color: rgb(52, 4, 163);
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Định dạng liên kết khi đã được truy cập */
+a:visited {
+  color: rgb(3, 245, 221);
+}
+a:hover {
+  color: green;
+}
+a:active {
+  color: rgb(237, 11, 203);
+}
+ul {
+  list-style-type: square;
+  /* list-style-type: square; */
+  /* list-style-position: inside; */
+  /* list-style-image: url("./Cach-bao-quan-thit-lon-gac-bep-khong-bi-hong.jpg"); */
+  /* ngắn gọn */
+  /* list-style: square inside url("./Cach-bao-quan-thit-lon-gac-bep-khong-bi-hong.jpg"); */
+}
+
+.display1 p {
+  border: 1px solid black;
+  display: inline;
+  color: red;
+}
+.display2 p {
+  border: 1px solid black;
+  display: block;
+  color: rgb(255, 0, 217);
+}
+.display3 p {
+  border: 1px solid black;
+  display: inline-block;
+  color: rgb(255, 208, 0);
+}
+.display4 p {
+  border: 1px solid black;
+  display: flex;
+  color: rgb(0, 247, 255);
+}
+.display5 p {
+  border: 1px solid black;
+  display: contents;
+  color: rgb(0, 255, 136);
+}
+input {
+  /* dổi màu cho thuộc tính type của input */
+  accent-color: red;
+}
+.alignitem {
+  border: 1px solid black;
+  height: 200px;
+  display: flex;
+  align-self: center;
+}
+.alignitem p {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+
+  text-decoration: underline overline dotted red;
+}
+
+#main {
+  border: 1px solid;
+  margin-top: 50px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+#main div {
+  flex: 1;
+}
+#myBlueDiv {
+  align-self: flex-start;
+}
+
+.background {
+  width: 800px;
+  height: 200px;
+  background: red url("./Cach-bao-quan-thit-lon-gac-bep-khong-bi-hong.jpg")
+    repeat-x;
+  background-size: 100%;
+  background-blend-mode: screen;
+}
+.overlow {
+  background: red;
+  width: 200px;
+  height: 100px;
+  /* overflow:hidden; Phần tràn được cắt bớt và phần nội dung còn lại sẽ ẩn 
+  */
+  overflow: scroll;
+  /* overflow-x: auto; */
+}
+.cloar {
+  border: 1px solid red;
+  width: 500px;
+}
+.cloar img {
+  float: left;
+  transform: translate(-10%);
+}
+.cloar img,
+p {
+  /* cloar xoa float left */
+  clear: left;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSniM3mDs9e4TZzn04wHkTX6FoDimCzikP6IkVs5dPvMGz9DcOOCOEhq7Wvlbj_Gy4zJ54&usqp=CAU");
+      }
+      button {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDKpFrFYKQlzFLDTiNmuFbdRiV8qJ5wyNQrnfN29ODcCuuXCXGbVG_hClTatwSK5tihUk&usqp=CAU");
+        width: 100px;
+        height: 1000px;
+        background-size: 100% 100%;
+        /* border-radius: 50%; */
+        color: rgb(15, 177, 53);
+        font-size: 40pt;
+        margin: 25px;
+        box-shadow: 10px 10px 10px red;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="./index.html">quay</a>
+    <script>
+      for (let i = 0; i < 100; i++) {
+        document.write("<button>Thế giới</button>");
+      }
+    </script>
+  </body>
+</html>

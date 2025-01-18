@@ -1,0 +1,78 @@
+/* outline */
+.oline1 {
+  outline: solid;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.oline2 {
+  border: 1px solid red;
+  outline-width: thick;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.oline3 {
+  border: 1px solid rgb(3, 3, 3);
+  outline-color: rgb(186, 34, 34);
+  height: 40px;
+  margin-bottom: 20px;
+}
+.oline4 {
+  border: 1px solid red;
+  outline-style: solid;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.oline5 {
+  /*outline: Width = thick = PX , Style = Solid , color = màu ,  */
+  border: 1px solid rgb(8, 6, 6);
+  outline: thick solid red;
+  /* thêm khoảng cách giữa đường viền và cạnh/đường viền của một phần tử */
+  outline-offset: 15px;
+}
+.text1 {
+  border: 1px solid black;
+  padding: 10px;
+  /* justify khác biệt so với center 
+   justify căn tất cả các dòng bằng nhau*/
+  text-align: justify;
+}
+.text2 {
+  border: 1px solid black;
+  /* căn chỉnh dòng cuối của văn bản */
+  text-align-last: center;
+  font-family: "Audiowide", sans-serif;
+  font-weight: bold;
+}
+.text3 {
+  border: 1px solid black;
+  text-align-last: right;
+}
+.text4 {
+  border: 1px solid black;
+  text-align-last: justify;
+}
+.text5 a {
+  border: 1px solid black;
+  /* giống thẻ sub và sup trong html */
+  vertical-align: sub;
+}
+.text6 a {
+  border: 1px solid black;
+  vertical-align: text-bottom;
+}
+p.ex1 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+/* CÚ PHÁP: font: [font-style] [font-variant] [font-weight] [font-size] / [line-height] [font-family]; 
+font-style: Kiểu chữ (nghiêng hoặc thường).
+font-variant: Kiểu chữ hoa thường (thường hoặc nhỏ).
+font-weight: Độ đậm nhạt của chữ.
+font-size: Kích thước của chữ.
+line-height: Chiều cao dòng.
+font-family: Phông chữ.
+*/
+pre {
+  font: italic small-caps bold 50px/1.5 Georgia, serif;
+}

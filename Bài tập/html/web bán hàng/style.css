@@ -1,0 +1,232 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: rgb(248, 247, 248);
+}
+header {
+  background-color: rgb(60, 229, 206);
+  color: rgb(255, 0, 170);
+  padding: 5px 0;
+  font-size: 15pt;
+  text-align: center;
+}
+.logo img {
+  width: 70px;
+  height: 80px;
+}
+h1 {
+  line-height: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #333;
+  margin: 0 15px;
+}
+nav a:hover {
+  background-color: #555;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-item {
+  border: 1px inset rgb(115, 6, 117);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px 0;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.product-item h3 {
+  margin-left: 45%;
+}
+.price {
+  color: red;
+  font-style: bold;
+  font-size: 16pt;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s;
+  background: red;
+  font-size: 16px;
+  margin-left: 25px;
+  animation: blink 0.2s infinite;
+}
+.buy-button:active {
+  background: #dde747;
+}
+@keyframes buy {
+  0%,
+  100% {
+    opacity: 1; /* 100% hiển thị */
+  }
+  50% {
+    opacity: 0; /* 50% ẩn */
+  }
+}
+.button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s;
+  background: #4caf50;
+}
+.button2:hover {
+  background: red;
+}
+
+.khung {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.khung-noidung {
+  border-radius: 10px;
+  border: 1px solid red;
+  background: rgb(152, 229, 236);
+  padding: 20px;
+  width: 240px;
+  max-width: 90%;
+  height: 330px;
+  position: relative;
+  margin-top: 3%;
+  margin-left: 10%;
+  border: none;
+}
+
+.khung span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.khung h2 {
+  text-align: center;
+  font-weight: bold;
+}
+.khung form {
+  display: flex;
+  flex-direction: column;
+}
+.khung label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.khung input {
+  margin-bottom: 10px;
+  height: 25px;
+  border-radius: 5px;
+}
+.khung select {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+.blink-button {
+  width: 120px;
+  height: 40px;
+  background: rgb(252, 20, 20);
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10%;
+  margin-left: 28%;
+  font-weight: bolder;
+  animation: blink 1s infinite; /* Áp dụng hiệu ứng nhấp nháy */
+}
+.blink-button:hover {
+  background: #dad23f;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1; /* 100% hiển thị */
+  }
+  50% {
+    opacity: 0; /* 50% ẩn */
+  }
+}
+.contact-form {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px;
+}
+.contact-form h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.contact-form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+.contact-form button:hover {
+  background: #555;
+}
+footer {
+  background-color: #322626;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}

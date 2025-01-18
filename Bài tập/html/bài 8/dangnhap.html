@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #khung {
+      border: 3px solid #0ea7e7;
+      border-radius: 15px;
+      width: 500px;
+      height: 450px;
+      border-top: none;
+      margin: 20px auto;
+    }
+    h1 {
+      height: 80px;
+      background: #0ea7e7;
+      text-align: center;
+      font-weight: bold;
+      color: aliceblue;
+      border-bottom: 5px solid rgb(201, 17, 32);
+      border-radius: 10px 10px 0 0;
+      line-height: 80px;
+    }
+    form {
+      padding-left: 25px;
+    }
+    input {
+      margin-top: 25px;
+    }
+    .name input {
+      width: 200px;
+      height: 30px;
+      border: 3px solid rgb(65, 56, 56);
+      border-radius: 5px;
+      margin-right: 25px;
+    }
+    .Email input {
+      width: 440px;
+      height: 30px;
+      border: 3px solid rgb(65, 56, 56);
+      border-radius: 5px;
+    }
+    .pass input {
+      width: 200px;
+      height: 30px;
+      border: 3px solid rgb(65, 56, 56);
+      border-radius: 5px;
+      margin-right: 25px;
+    }
+    .phone input {
+      width: 440px;
+      height: 30px;
+      border: 3px solid rgb(65, 56, 56);
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    button {
+      margin: 10px 135px;
+      width: 200px;
+      height: 50px;
+      background: #ea484e;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      font-weight: bold;
+      font-size: 20pt;
+      display: block;
+    }
+    span {
+      margin-left: 135px;
+    }
+  </style>
+  <body>
+    <div id="khung">
+      <div><h1>CREATE AN ACCUOUNT</h1></div>
+      <form action="" method="get">
+        <div class="name">
+          <input type="text" name="lastname" placeholder="last Name" required />
+          <input
+            type="text"
+            name="firstname"
+            placeholder="first Name"
+            required
+          />
+        </div>
+        <div class="Email">
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="pass">
+          <input
+            type="password"
+            name="password"
+            placeholder="password"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Confirm password"
+            required
+          />
+        </div>
+        <div class="phone">
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+        </div>
+        <button type="submit">Sign me up</button>
+        <span>
+          Already have an account?<a href="http://www.facebook.com"
+            >Login Here</a
+          >
+        </span>
+      </form>
+    </div>
+  </body>
+</html>
