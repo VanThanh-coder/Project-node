@@ -1,0 +1,102 @@
+img {
+  width: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 960px;
+  height: auto;
+  margin: 10px auto;
+  background: rgb(156, 147, 147);
+}
+header {
+  border: 1px solid black;
+  width: 960px;
+  height: 130px;
+  margin: 0px 0px 20px 0px;
+  background: white;
+}
+header img {
+  width: 80px;
+  padding: 20px;
+}
+nav {
+  float: right;
+  margin: 110px 0px 0px 0px;
+}
+nav a {
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(86, 86, 247);
+  font-weight: bold;
+}
+#container {
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+}
+.content {
+  width: 630px;
+  height: 450px;
+  border: 1px solid black;
+  float: left;
+  background: white;
+}
+.content h1 {
+  background: rgb(15, 15, 185);
+  color: white;
+}
+table td {
+  padding: 5px;
+}
+table td h2 {
+  color: rgb(70, 70, 161);
+}
+table td img {
+  width: 200px;
+  height: 100px;
+}
+.form {
+  width: 300px;
+  height: 450px;
+  border: 1px solid black;
+  float: right;
+  background: white;
+}
+form {
+  text-align: center;
+}
+form h3 {
+  background: blue;
+  height: 35px;
+  color: white;
+}
+form input[type="text"] {
+  width: 250px;
+  margin: 30px 0px 0px 0px;
+  padding: 10px;
+}
+form select {
+  width: 90px;
+  padding: 10px;
+  margin-top: 30px;
+}
+form p {
+  text-align: left;
+  padding-left: 15px;
+}
+form input[type="checkbox"] {
+  margin-right: 30px;
+}
+form label {
+  float: left;
+  padding-left: 20px;
+}
+form button {
+  padding: 5px 20px;
+  color: white;
+  background: rgb(95, 149, 13);
+  margin: 15px;
+}
